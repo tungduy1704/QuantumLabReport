@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Kernel - Project Dashboard</title>
+    <title>QuantumLab Project Tracking</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -201,7 +201,6 @@
     <div class="container">
         <header class="header">
             <h1>⚛️ Quantum Kernel Recommendation System</h1>
-            <p>Project Tracking Dashboard</p>
         </header>
         <nav class="tab-nav">
             <button class="tab-btn active" data-tab="overview"><span>📋</span> Overview</button>
@@ -212,10 +211,6 @@
 
         <!-- OVERVIEW -->
         <div id="overview" class="tab-content active">
-            <div class="edit-hint">
-                <span class="icon">💡</span>
-                <span>Click vào thanh tiến độ hoặc nhập số % để thay đổi. Dữ liệu tự động lưu vào trình duyệt.</span>
-            </div>
             
             <div class="card">
                 <h2 class="card-title">🎯 Mục tiêu Project</h2>
@@ -388,21 +383,14 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card-header"><h3 class="card-subtitle" style="margin-bottom:0">🔮 Quantum Metrics (Qdata)</h3><span class="tag tag-purple" style="font-size:14px;font-weight:600">2+ metrics</span></div>
+                <div class="card-header"><h3 class="card-subtitle" style="margin-bottom:0">🔮 Classical Metrics (Qdata.py)</h3><span class="tag tag-purple" style="font-size:14px;font-weight:600">2+ metrics</span></div>
                 <div class="quantum-metric-box">
-                    <div class="quantum-metric-name">Connected Correlator</div>
-                    <p class="quantum-metric-desc">Đo correlation giữa các qubits</p>
-                    <div><span class="output-tag">u2_sum_abs</span><span class="output-tag">u2_max</span><span class="output-tag">u2_mean</span></div>
+                    <div class="quantum-metric-name">Intrinsic Dimension</div>
+                    <p class="quantum-metric-desc">Return the estimated Intrinsic Dimension using the spectrum of the covariance matrix</p>
                 </div>
                 <div class="quantum-metric-box">
-                    <div class="quantum-metric-name">Entanglement Entropy</div>
-                    <p class="quantum-metric-desc">Đo entanglement (von Neumann entropy)</p>
-                    <div><span class="output-tag">entropy_bipartition</span><span class="output-tag">entropy_mean</span></div>
-                </div>
-                <div class="quantum-metric-box">
-                    <div class="quantum-metric-name">Expressibility</div>
-                    <p class="quantum-metric-desc">Khả năng biểu diễn so với Haar random</p>
-                    <div><span class="output-tag">expressibility</span><span class="output-tag">fidelity_mean</span></div>
+                    <div class="quantum-metric-name">Kolmogorov Complex</div>
+                    <p class="quantum-metric-desc">Return the estimated Kolmogorov complexity of the dataset</p>
                 </div>
             </div>
         </div>
