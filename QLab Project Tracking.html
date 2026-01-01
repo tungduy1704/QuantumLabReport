@@ -8,10 +8,10 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --bg-primary: #0a0a0f; --bg-card: rgba(18, 18, 26, 0.95);
+            --bg-primary: #26242f; --bg-card: rgba(18, 18, 26, 0.95);
             --border-color: rgba(139, 92, 246, 0.15); --text-primary: #f3f4f6;
             --text-secondary: #9ca3af; --text-muted: #6b7280;
-            --accent-purple: #8b5cf6; --accent-purple-light: #c4b5fd;
+            --accent-purple: #6449af; --accent-purple-light: #c4b5fd;
             --accent-blue: #3b82f6; --accent-blue-light: #93c5fd;
             --accent-green: #10b981; --accent-green-light: #6ee7b7;
             --accent-yellow: #f59e0b; --accent-yellow-light: #fcd34d;
@@ -94,7 +94,7 @@
             display: flex; align-items: center; gap: 8px;
         }
         .progress-text input {
-            width: 50px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            width: 60px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
             border-radius: 6px; color: var(--text-primary); font-size: 13px; padding: 4px 8px;
             font-family: 'JetBrains Mono', monospace; text-align: center;
         }
@@ -218,7 +218,7 @@
                 <p class="desc-text"><strong>Ý tưởng cốt lõi:</strong> Học cách "dự đoán" kernel tốt nhất thông qua các metric đo độ phức tạp Classical-Quantum.</p>
             </div>
             
-            <div class="section-divider"><span>Tiến độ các Module</span></div>
+            <div class="section-divider"><span>Module Progress</span></div>
             
             <div class="grid-3">
                 <div class="overview-card" id="card-quantum" onclick="switchTab('quantum-learning')">
@@ -300,7 +300,7 @@
             </div>
             <div class="card">
                 <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
-                    <div><div class="component-title">📁 load_datasets()</div><div class="component-file">load_datasets.py</div></div>
+                    <div><div class="component-title">📁 load_datasets</div><div class="component-file">load_datasets.py</div></div>
                     <span class="status-badge status-completed">Hoàn thành</span>
                 </div>
                 <p class="component-desc">Load và tiền xử lý 6 datasets cho bài toán Classification</p>
@@ -314,14 +314,14 @@
                     <div class="dataset-item"><div class="dataset-name">Haberman</div><div class="dataset-info">244 samples, 3 features</div></div>
                 </div>
                 <h5 style="color:var(--text-primary);font-size:14px;margin:20px 0 12px">Preprocessing:</h5>
-                <div><span class="tag tag-gray">MinMaxScaler → [0, π]</span><span class="tag tag-gray">Train-Test split (80-20)</span><span class="tag tag-gray">PCA reduction</span></div>
+                <div><span class="tag tag-gray">MinMaxScaler → [0, π]</span><span class="tag tag-gray">Train-Test split (80-20)</span></div>
             </div>
             <div class="card">
                 <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
-                    <div><div class="component-title">🤖 kernel_evaluation()</div><div class="component-file">kernel_evaluation.py</div></div>
+                    <div><div class="component-title">🤖 kernel_evaluation</div><div class="component-file">kernel_evaluation.py</div></div>
                     <span class="status-badge status-completed">Hoàn thành</span>
                 </div>
-                <p class="component-desc">Đánh giá quantum kernels với Classical ML models</p>
+                <p class="component-desc">Đánh giá quantum kernels với Classical Machine Learning models</p>
                 <h5 style="color:var(--text-primary);font-size:14px;margin-bottom:12px">ML Models:</h5>
                 <div class="model-item"><span class="model-badge">QSVM</span><span class="model-desc">Quantum Support Vector Machine</span></div>
                 <div class="model-item"><span class="model-badge">QGPC</span><span class="model-desc">Quantum Gaussian Process Classifier</span></div>
